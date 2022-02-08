@@ -1,0 +1,264 @@
+:root{
+    --navBtnbgColor: #FFC814;
+    --navBtnColor: #1F3347;
+    --statisticText: #70717B;
+    --statisticShadow: 0px 6px 24px #E4E2EE;
+    --secondTextcolor: #9DA1B4;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: quick;
+    src: url(/assets/fonts/Quick\ Kiss\ Personal\ Use.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif !important;
+}
+
+
+header{
+    position: relative;
+    width: 100%;
+    height: 120vh;
+    background-image: url( /assets/images/main.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar-container{
+    position: relative;
+}
+
+.navbar-nav{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 0;
+}
+
+.navbar-brand{
+    font-weight: 600;
+    font-size: 32px !important;
+    line-height: 50px;
+    color: white !important;
+}
+
+.navbar-nav .nav-item{
+    margin-left: 20px;
+}
+
+.navbar-nav .nav-link{
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    color: #FFFFFF !important;
+}
+
+ .nav-btn{
+    width: 140px;
+    height: 48px;
+    background: var(--navBtnbgColor);
+    border-radius: 4px;
+    font-size: 14px !important;
+    font-weight: 600 !important;
+    color: var(--navBtnColor);
+}
+
+/* =======================================
+               Main Styles 
+   ======================================= */
+
+.main{
+    margin-top: 85px;
+}
+
+
+.main__title{
+    font-weight: bold;
+    font-size: 46px;
+    line-height: 56px;
+    color: #FFFFFF;
+    width: 35%;
+    margin-bottom: 12px;
+}
+
+.main__text{
+    font-size: 12px;
+    line-height: 20px;
+    color: #FFFFFF;
+    width: 39%;
+    margin-bottom: 30px;
+}
+
+.btn-read{
+    margin-left: 20px;
+    background-color: white !important;
+    border: none !important;
+}
+
+/* =======================================
+               Statistic Styles 
+   ======================================= */
+
+.statistic{
+    position: relative;
+    top: -110px;
+}
+
+.statistic-cards{
+    width: 100%;
+    padding: 35px ;
+    justify-content: space-between !important;
+    align-items: center;
+    background: #FFFFFF;
+    box-shadow: var(--statisticShadow);
+}
+
+
+.statistic-header{
+    width: 40%;
+    justify-content: space-between;
+}
+
+.statistic-header .transport{
+    width: 100px;
+    height: 45px;
+    background: #FFFFFF;
+    border-radius: 4px 4px 0px 0px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.statistic-header .transport:hover{
+    background-color: var(--navBtnbgColor);
+    transition: all 0.5s;
+}
+
+.statistic .transport__title{
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    color: var(--navBtnColor);
+}
+
+.statistic-card div{
+    width: 130px;
+    height: 48px;
+    box-shadow: var(--statisticShadow);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    text-indent: 10px;
+}
+
+.statistic-card p{
+    font-size: 14px;
+    line-height: 15px;
+    color: var(--statisticText);
+    margin-top: 15px;
+}
+
+.statistic-cards .statistic-card:last-child h5{
+    opacity: 0;
+    
+}
+
+.statistic-cards .statistic-card:last-child .btn{
+    box-shadow: 0px 6px 24px rgba(255, 200, 20, 0.4);
+}
+
+
+/* =======================================
+               Second-part Styles 
+   ======================================= */
+
+.second-part{
+    position: relative;
+    margin-top: -150px;
+    padding-top: 120px;
+    margin-bottom: 100px;
+}
+
+.second-part .travel{
+    text-align: center;
+    position: absolute;
+    top: 0;
+    font-weight: 600;
+    font-size: 340px;
+    line-height: 300px;
+    color: rgba(244, 246, 250, 0.8);
+    z-index: -1;
+}
+
+.second-part .second-left{
+    padding-left: 0;
+    position: relative;
+}
+
+.second-part .friend{
+    width: 70%;
+}
+
+.second-left .girl{
+    position: absolute;
+    width: 45%;
+    bottom: -6%;
+    right: 8%;
+}
+
+.second-right .about-us{
+    font-family: quick;
+    font-size: 20px;
+    line-height: 15px;
+    color: var(--navBtnbgColor);
+}
+
+.second-right .second__title{
+    font-weight: bold;
+    font-size: 27px;
+    line-height: 36px;
+    text-transform: capitalize;
+    color: var(--navBtnColor);
+    margin-bottom: 20px;
+}
+
+.second-right p{
+    font-size: 12px;
+    line-height: 20px;
+    color:var(--secondTextcolor);
+    width: 80%;
+}
+
+.second-statistics{
+    width: 80%;
+}
+
+.second-statistic{
+    margin: 30px 0;
+}
+
+.second-statistic h2{
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 28px;
+    color: #FFC814;
+}
+
+.second-part .palma{
+    position: absolute;
+    bottom: 0;
+    right: 20px;
+    width: 20%;
+    z-index: -1;
+}
